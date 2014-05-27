@@ -1,0 +1,3 @@
+The matlab function loadFramesFromFile is used to load raw output data from the FPGA (in binary format) to a matlab multidimensional matrix. plot_dac_sweep.m uses this function to plot a counts-vs-dac value plot. But plot_dac_sweep should be regarded mostly as an example of how loadFramesFromFile can be used, since the data processing and plotting code will have to be custom-made for any experiment we do.
+via_channels.mat contains a list of which channels are via channels for the different asics. This file is only necessary if one wants to use the code in plot_dac_sweep for plotting via and nonvia channels separately.
+via_channels.mat also contains a map of the channel numbers for the different diode segments.
